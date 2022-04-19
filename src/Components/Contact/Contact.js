@@ -7,7 +7,7 @@ import emailjs from "emailjs-com";
 const Contact =()=>{
     const formRef =useRef();
     const [done, setDone] = useState(false);
-    const handleSubmit = (e) =>{
+    const handleSubmit = (e) =>{ 
         e.preventDefault();
         emailjs.sendForm('service_x79igbp', 'template_0jk011w', formRef.current, 'B6196ayHVqUL1bSqA')
         .then((result) => {
